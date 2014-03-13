@@ -38,3 +38,14 @@ Template.chirp_list.chirps = function () {
   return Chirps.find({}, {sort: {timestamp: -1}});
 };
 
+Template.new_chirp.events(okCancelEvents(
+  '#new-chirp',
+  {
+    ok: function(text, evt) {
+      Chirps.insert({
+        text: text,
+        timestamp: (new Date()).getTime()
+      });
+      evt.target.value = '';
+    }
+  }));
