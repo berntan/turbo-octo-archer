@@ -1,5 +1,3 @@
-////////// Helpers for in-place editing //////////
-
 // Returns an event map that handles the "escape" and "return" keys and
 // "blur" events on a text input (given by selector) and interprets them
 // as "ok" or "cancel".

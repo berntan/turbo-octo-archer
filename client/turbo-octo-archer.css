@@ -44,3 +44,7 @@ input {
   margin-top: 5px;
   margin-left: 5px;
 }
+
+#chirp-author {
+  font-size: 12px;
+}
