@@ -37,6 +37,7 @@ Template.new_chirp.events(okCancelEvents(
   {
     ok: function(text, evt) {
       Chirps.insert({
+        owner: Meteor.userId(),
         text: text,
         timestamp: (new Date()).getTime()
       });
