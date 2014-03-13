@@ -28,6 +28,16 @@ input {
     font-size: 100%;
 }
 
+
+#top-hello {
+    left: 200px;
+    height: 90px;
+    bottom: auto;
+    background: #ddd;
+    border-bottom: 1px solid #999;
+}
+
+
 #new-chirp-box {
     margin-top: 10px;
     margin-bottom: 10px;
