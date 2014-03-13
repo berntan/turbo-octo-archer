@@ -1,13 +1,32 @@
 <head>
-  <title>turbo</title>
+    <title>turbo</title>
 </head>
 
 <body>
-  {{> hello}}
+    <div id="top-hello">
+        {{> hello}}
+    </div>
+    <div id="main-pane">
+        {{> chirp_list }}
+    </div>
 </body>
 
 <template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
+    <h1>Hello World!</h1>
+    {{greeting}}
+</template>
+
+
+<template name="chirp_list">
+    <ul class="chirp_list">
+        {{#each chirps}}
+            {{> chirp_item}}
+        {{/each}}
+    </ul>
+</template>
+
+<template name="chirp_item">
+    <li class="chirp_item">
+        <div class="chirp-text">{{text}}</div>
+    </li>
 </template>
