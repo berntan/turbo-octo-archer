@@ -34,19 +34,10 @@ input {
   border-bottom: 1px solid #999;
 }
 
-#new-chirp-box {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 60px;
-  margin-right: 20px;
+#new-chirp {
   font-size: 160%;
   position: relative;
-  height: 40px;
-}
-
-#new-chirp {
-  position: relative;
-  width: 90%;
+  width: 99%;
 }
 
 #chirp-view {
