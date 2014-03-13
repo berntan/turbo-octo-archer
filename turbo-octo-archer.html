@@ -13,9 +13,15 @@
 
 <template name="hello">
     <h1>Hello World!</h1>
-    {{greeting}}
+    <div>{{greeting}}</div>
+    {{> new_chirp}}
 </template>
 
+<template name="new_chirp">
+    <div class="input">
+        <input class="new-chirp" id="new-chirp" type="text" placeholder="Whate are you doing?" />
+    </div>
+</template>
 
 <template name="chirp_list">
     <ul class="chirp_list">
