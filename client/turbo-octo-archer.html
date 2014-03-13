@@ -7,19 +7,23 @@
         {{> hello}}
     </div>
     <div id="main-pane">
-        {{> chirp_list }}
+        {{> new_chirp}}
     </div>
 </body>
 
 <template name="hello">
     <h1>Hello World!</h1>
     <div>{{greeting}}</div>
-    {{> new_chirp}}
 </template>
 
 <template name="new_chirp">
-    <div class="input">
-        <input class="new-chirp" id="new-chirp" type="text" placeholder="Whate are you doing?" />
+    <div class="chirp-view">
+        <div class="new-chirp-box">
+            <input class="new-chirp" id="new-chirp" type="text" placeholder="Whate are you doing?" />
+        </div>
+        <div>
+            {{> chirp_list }}
+        </div>
     </div>
 </template>
 

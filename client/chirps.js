@@ -28,12 +28,6 @@ var okCancelEvents = function (selector, callbacks) {
   return events;
 };
 
-var activateInput = function (input) {
-  input.focus();
-  input.select();
-};
-
-
 Template.chirp_list.chirps = function () {
   return Chirps.find({}, {sort: {timestamp: -1}});
 };
