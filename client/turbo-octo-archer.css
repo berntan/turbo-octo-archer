@@ -1,8 +1,8 @@
 /* CSS declarations go here */
 
 * {
-  padding: 1;
-  margin: 1;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
@@ -43,6 +43,10 @@ input {
 #chirp-view {
   margin-top: 5px;
   margin-left: 5px;
+}
+
+.chirp-item {
+  border: 1px solid white;
 }
 
 #chirp-author {
